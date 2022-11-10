@@ -1,0 +1,19 @@
+#N canvas 463 264 450 300 12;
+#X declare -lib Gem;
+#X obj 167 157 gemwin;
+#X obj 317 12 declare -lib Gem;
+#X obj 118 68 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X msg 148 67 create;
+#X msg 220 49 destroy;
+#X msg 250 85 dimen 640 480;
+#X msg 294 114 title Pure_Data;
+#X msg 290 45 color 1 1 1;
+#X msg 368 81 reset;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;

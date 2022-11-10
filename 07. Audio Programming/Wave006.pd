@@ -1,0 +1,70 @@
+#N canvas 551 202 640 555 12;
+#X obj 45 35 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X msg 45 71 \; pd dsp \$1;
+#X obj 206 485 dac~;
+#X obj 255 485 tabwrite~ wave;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array wave 250 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#X coords 0 1 250 -1 200 140 1;
+#X restore 416 22 graph;
+#X obj 276 442 metro 100;
+#X obj 277 411 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 218 370 osc~;
+#X obj 218 402 *~;
+#X msg 263 370 0.5;
+#X obj 306 332 delay 200;
+#X msg 306 370 0;
+#X obj 218 290 trigger f b b;
+#X floatatom 218 332 5 0 0 0 - - - 0;
+#X obj 187 137 hradio 15 1 0 8 empty empty empty 0 -8 0 10 #fcfcfc
+#000000 #000000 0;
+#X obj 187 174 select 0 1 2 3 4 5 6 7;
+#X msg 136 227 262;
+#X msg 174 228 294;
+#X msg 210 228 330;
+#X msg 247 228 349;
+#X msg 284 228 392;
+#X msg 319 228 440;
+#X msg 355 228 494;
+#X msg 390 228 523;
+#X connect 0 0 1 0;
+#X connect 5 0 3 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 2 0;
+#X connect 8 0 2 1;
+#X connect 8 0 3 0;
+#X connect 9 0 8 1;
+#X connect 10 0 11 0;
+#X connect 11 0 8 1;
+#X connect 12 0 13 0;
+#X connect 12 1 9 0;
+#X connect 12 2 10 0;
+#X connect 13 0 7 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 15 1 17 0;
+#X connect 15 2 18 0;
+#X connect 15 3 19 0;
+#X connect 15 4 20 0;
+#X connect 15 5 21 0;
+#X connect 15 6 22 0;
+#X connect 15 7 23 0;
+#X connect 16 0 12 0;
+#X connect 17 0 12 0;
+#X connect 18 0 12 0;
+#X connect 19 0 12 0;
+#X connect 20 0 12 0;
+#X connect 21 0 12 0;
+#X connect 22 0 12 0;
+#X connect 23 0 12 0;

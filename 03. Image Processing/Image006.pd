@@ -1,0 +1,38 @@
+#N canvas 892 357 686 564 12;
+#X declare -lib Gen;
+#X obj 432 30 declare -lib Gen;
+#X obj 69 105 gemwin;
+#X msg 75 60 create;
+#X msg 139 60 destroy;
+#X obj 42 64 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 223 121 gemhead 55;
+#X obj 386 123 gemhead 50;
+#X obj 223 179 pix_video;
+#X obj 224 254 rotateXYZ;
+#X floatatom 256 209 5 0 0 0 - - - 0;
+#X floatatom 301 209 5 0 0 0 - - - 0;
+#X obj 226 337 pix_texture;
+#X obj 226 408 cuboid 1.6 1.2 1.2;
+#X obj 388 261 pix_image;
+#X obj 387 330 pix_texture;
+#X obj 388 406 square 4;
+#X msg 444 227 open \$1;
+#X obj 444 201 openpanel;
+#X obj 445 178 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 7 0;
+#X connect 6 0 13 0;
+#X connect 7 0 8 0;
+#X connect 8 0 11 0;
+#X connect 9 0 8 1;
+#X connect 10 0 8 2;
+#X connect 11 0 12 0;
+#X connect 13 0 14 0;
+#X connect 14 0 15 0;
+#X connect 16 0 13 0;
+#X connect 17 0 16 0;
+#X connect 18 0 17 0;

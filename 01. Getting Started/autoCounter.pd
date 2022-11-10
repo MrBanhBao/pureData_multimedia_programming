@@ -1,0 +1,22 @@
+#N canvas 63 88 450 300 12;
+#X obj 58 146 float;
+#X obj 132 147 +;
+#X floatatom 58 210 5 0 0 0 - - - 0;
+#X floatatom 150 96 5 0 0 0 - - - 0;
+#X obj 58 94 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X msg 93 93 0;
+#X obj 240 76 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 240 118 metro 1000;
+#X obj 240 183 send cnt;
+#X obj 58 51 receive cnt;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 1 1;
+#X connect 4 0 0 0;
+#X connect 5 0 0 1;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 9 0 4 0;

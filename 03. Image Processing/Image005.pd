@@ -1,0 +1,22 @@
+#N canvas 642 224 522 559 12;
+#X declare -lib Gem;
+#X obj 65 106 gemwin;
+#X obj 28 50 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X msg 57 46 create;
+#X msg 123 46 destroy;
+#X obj 236 103 gemhead;
+#X obj 378 14 declare -lib Gem;
+#X obj 236 219 pix_video;
+#X obj 236 286 pix_delay;
+#X obj 236 360 pix_texture;
+#X obj 237 456 rectangle 4 3;
+#X floatatom 296 259 5 0 0 0 - - - 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 10 0 7 1;

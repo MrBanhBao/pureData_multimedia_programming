@@ -1,0 +1,21 @@
+#N canvas 382 407 619 300 12;
+#N canvas 643 594 450 278 (subpatch) 0;
+#X array loop 16 float 1;
+#A 0 3.76977 1.00719 2.84172 3.14389 2.02159 1.41728 0.446057 0.618718
+1.28778 0.769792 1.46043 3.8561 1.89208 2.45323 2.58272 0;
+#X coords 0 5 15 -1 200 140 1 0 0;
+#X restore 36 92 graph;
+#X obj 286 176 tabwrite loop;
+#X floatatom 286 141 5 0 0 0 - - - 0;
+#X floatatom 374 142 5 0 0 0 - - - 0;
+#X text 281 116 value;
+#X text 372 116 index;
+#X obj 475 141 tabread loop;
+#X floatatom 475 105 5 0 0 0 - - - 0;
+#X floatatom 475 183 5 0 0 0 - - - 0;
+#X text 517 104 index;
+#X text 520 182 value;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;

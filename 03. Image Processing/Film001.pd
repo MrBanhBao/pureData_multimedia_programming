@@ -1,0 +1,45 @@
+#N canvas 92 117 676 539 12;
+#X declare -lib Gem;
+#X obj 65 106 gemwin;
+#X obj 315 16 declare -lib Gem;
+#X obj 28 50 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X msg 57 46 create;
+#X msg 123 46 destroy;
+#X obj 325 90 gemhead;
+#X obj 322 370 pix_texture;
+#X obj 322 440 rectangle;
+#X floatatom 352 410 5 0 0 0 - - - 0;
+#X floatatom 398 411 5 0 0 0 - - - 0;
+#X obj 423 163 openpanel;
+#X obj 423 137 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X msg 423 198 open \$1;
+#X obj 322 256 pix_film;
+#X msg 356 199 auto \$1;
+#X obj 356 165 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 458 290 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 351 289 unpack f f f;
+#X floatatom 352 327 5 0 0 0 - - - 0;
+#X floatatom 397 327 5 0 0 0 - - - 0;
+#X floatatom 442 327 5 0 0 0 - - - 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 13 0;
+#X connect 6 0 7 0;
+#X connect 8 0 7 1;
+#X connect 9 0 7 2;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 12 0 13 0;
+#X connect 13 0 6 0;
+#X connect 13 1 17 0;
+#X connect 13 2 16 0;
+#X connect 14 0 13 0;
+#X connect 15 0 14 0;
+#X connect 17 0 18 0;
+#X connect 17 1 19 0;
+#X connect 17 2 20 0;

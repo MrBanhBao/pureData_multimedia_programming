@@ -1,0 +1,36 @@
+#N canvas 704 186 645 594 12;
+#X declare -lib Gem;
+#X obj 53 268 gemhead;
+#X obj 471 28 declare -lib Gem;
+#X obj 136 86 pix_buffer temp 1;
+#X obj 42 87 gemwin;
+#X msg 56 34 create;
+#X msg 115 34 destroy;
+#X obj 25 37 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 277 267 gemhead;
+#X obj 279 391 pix_buffer_write temp;
+#X obj 53 323 pix_buffer_read temp;
+#X obj 54 383 pix_texture;
+#X obj 54 449 rectangle 4 3;
+#X msg 190 281 0;
+#X obj 278 331 pix_video;
+#X msg 423 329 0;
+#X obj 197 146 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 197 214 trigger b b;
+#X obj 197 178 metro 1000;
+#X connect 0 0 9 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 13 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 12 0 9 1;
+#X connect 13 0 8 0;
+#X connect 14 0 8 1;
+#X connect 15 0 17 0;
+#X connect 16 0 12 0;
+#X connect 16 1 14 0;
+#X connect 17 0 16 0;

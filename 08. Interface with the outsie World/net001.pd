@@ -1,0 +1,17 @@
+#N canvas 722 163 450 300 12;
+#X obj 286 126 netreceive 3000;
+#X obj 84 130 netsend;
+#X msg 26 99 send Hello;
+#X msg 133 57 connect localhost 3000;
+#X msg 46 60 send 1234;
+#X msg 156 98 disconnect;
+#X floatatom 84 154 5 0 0 0 - - - 0;
+#X floatatom 389 162 5 0 0 0 - - - 0;
+#X obj 286 162 print;
+#X connect 0 0 8 0;
+#X connect 0 1 7 0;
+#X connect 1 0 6 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;

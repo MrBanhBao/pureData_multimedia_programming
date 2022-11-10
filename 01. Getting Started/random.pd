@@ -1,0 +1,7 @@
+#N canvas 24 -549 450 300 12;
+#X obj 130 54 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 130 103 random 6;
+#X floatatom 130 158 5 0 0 0 - - - 0;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;

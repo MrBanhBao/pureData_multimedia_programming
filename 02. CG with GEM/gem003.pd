@@ -1,0 +1,37 @@
+#N canvas 417 -780 610 465 12;
+#X declare -lib Gem;
+#X obj 70 117 gemwin;
+#X msg 69 18 create;
+#X msg 135 21 destroy;
+#X obj 29 43 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 445 21 declare -lib Gem;
+#X obj 406 202 gemhead;
+#X msg 313 214 draw line;
+#X msg 312 184 draw fill;
+#X floatatom 425 233 5 0 0 0 - - - 0;
+#X obj 296 383 cube;
+#X floatatom 321 350 5 0 0 0 - - - 0;
+#X obj 406 272 sphere;
+#X floatatom 471 235 5 0 0 0 - - - 0;
+#X msg 149 78 lighting \$1;
+#X obj 149 51 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 50 192 gemhead;
+#X obj 50 244 world_light;
+#X msg 124 205 1 1 0;
+#X msg 166 243 0 0 1;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 5 0 11 0;
+#X connect 6 0 11 0;
+#X connect 7 0 11 0;
+#X connect 8 0 11 1;
+#X connect 10 0 9 1;
+#X connect 12 0 11 2;
+#X connect 13 0 0 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X connect 17 0 16 1;
+#X connect 18 0 16 1;

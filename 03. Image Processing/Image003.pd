@@ -1,0 +1,65 @@
+#N canvas 606 246 882 485 12;
+#X declare -lib Gem;
+#X obj 65 106 gemwin;
+#X obj 28 50 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X msg 57 46 create;
+#X msg 123 46 destroy;
+#X obj 315 16 declare -lib Gem;
+#X obj 273 59 gemhead;
+#X obj 272 377 pix_texture;
+#X obj 272 197 pix_image;
+#X obj 359 109 openpanel;
+#X obj 359 83 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 272 418 rectangle 3 3;
+#X msg 359 143 open ../statics/lenna.png;
+#X obj 588 325 pix_invert;
+#X obj 713 326 pix_2gray;
+#X obj 572 422 pix_flip;
+#X msg 610 373 none;
+#X msg 661 373 horizontal;
+#X msg 754 373 vertical;
+#X msg 832 373 both;
+#X obj 431 232 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 349 232 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 585 281 pix_metaimage;
+#X msg 662 210 cheap \$1;
+#X msg 744 210 distance \$1;
+#X obj 744 181 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 662 181 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 676 245 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 272 332 pix_lumaoffset;
+#X msg 349 261 fill \$1;
+#X msg 431 261 smooth \$1;
+#X floatatom 389 305 5 0 0 0 - - - 0;
+#X floatatom 437 306 5 0 0 0 - - - 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 5 0 7 0;
+#X connect 6 0 10 0;
+#X connect 7 0 27 0;
+#X connect 9 0 8 0;
+#X connect 11 0 7 0;
+#X connect 15 0 14 0;
+#X connect 16 0 14 0;
+#X connect 17 0 14 0;
+#X connect 18 0 14 0;
+#X connect 19 0 29 0;
+#X connect 20 0 28 0;
+#X connect 22 0 21 0;
+#X connect 23 0 21 0;
+#X connect 24 0 23 0;
+#X connect 25 0 22 0;
+#X connect 26 0 21 1;
+#X connect 27 0 6 0;
+#X connect 28 0 27 0;
+#X connect 29 0 27 0;
+#X connect 30 0 27 1;
+#X connect 31 0 27 2;
